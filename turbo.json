@@ -17,6 +17,11 @@
       "cache": false,
       "persistent": true
     },
+    "start": {
+      "cache": false,
+      "persistent": true
+    },
+
     "db:deploy": {
       "cache": false,
       "env": ["DATABASE_URL"]

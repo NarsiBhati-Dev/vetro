@@ -8,7 +8,8 @@
     "dev": "bun run --watch src/index.ts",
     "generate": "bunx prisma generate",
     "migrate": "bun prisma migrate dev",
-    "db:deploy": "bun prisma migrate deploy && bun run generate",
+    "start": "bun run build && bun run src/index.ts",
+    "build": "bun prisma migrate deploy && bun run generate",
     "vercel-build": "prisma migrate deploy && prisma generate",
     "postinstall": "prisma generate"
   },
